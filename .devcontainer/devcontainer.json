@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+  "name": "Debian",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" },
+    "ghcr.io/itsmechlark/features/postgresql:1": {},
+    "ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {},
+    "node": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.black-formatter",
+        "formulahendry.code-runner",
+        "ms-python.flake8",
+        "github.vscode-github-actions",
+        "codezombiech.gitignore",
+        "donjayamanne.git-extension-pack",
+        "waderyan.gitblame",
+        "csstools.postcss",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "william-voyek.vscode-nginx",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 4173, 5173, 5432]
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

@@ -1,0 +1,44 @@
+# IDE settings
+.vscode/*
+!.vscode/settings.json.default
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest Cache
+.pytest_cache/
+
+# Development Environment
+.env
+.env.local
+.env.test
+.env.dev
+.env.prod
+env/
+.secrets/
+
+# Data
+*.csv
+*.xml
+/testdata
+
+# Untested code, code that is commented out, etc.
+/scratch
+
+# Static files (Remove after nginx is set up)
+/static
+
+# logs
+logs
+*.logs
+npm-debug.log*
+
+# dummy files
+assets/dummy
+
+# dev dependencies
+node_modules
+dist
+*.local
