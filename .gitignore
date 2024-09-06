@@ -42,3 +42,7 @@ assets/dummy
 node_modules
 dist
 *.local
+
+## Chronos-specific
+/chronos/**/credentials.json
+/chronos/**/token.json
